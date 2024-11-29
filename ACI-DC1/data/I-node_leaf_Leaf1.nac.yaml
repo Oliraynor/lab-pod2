@@ -1,0 +1,21 @@
+## This YAML File contains specific Node configuration for Leaf1
+---
+apic:
+  node_policies:
+  
+    nodes:
+      - id: 101
+        role: leaf
+
+  interface_policies:
+    nodes:
+    - id: 101
+      interfaces:
+
+      - port: 12
+        description: Lab - pod2 - ServerW
+        policy_group: ipg_lab_pod2_server_10g
+
+      - port: 22
+        description: Lab - pod2 - ServerA
+        policy_group: ipg_lab_pod2_serverA_vpc1
